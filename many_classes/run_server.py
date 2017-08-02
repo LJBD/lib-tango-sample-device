@@ -20,6 +20,9 @@ method of this module as an `entry_point` in a `setup.py` script.
 >>>                                  'your_package.run_server:main']}
 >>> (...)
 >>> )
+
+In such a case, you would have to define `AggregateDS` Device Server in your
+Tango Database.
 """
 
 from many_classes.device_one import DeviceOne
