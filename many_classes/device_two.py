@@ -3,6 +3,10 @@ from tango.server import Device, attribute, DeviceMeta
 
 
 class DeviceTwo(Device):
+    """
+    The second of the sample Device Classes.
+    It only has one read-only string attribute.
+    """
     __metaclass__ = DeviceMeta
 
     @attribute(dtype=str)

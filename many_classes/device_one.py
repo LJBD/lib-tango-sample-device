@@ -5,6 +5,10 @@ from tango.server import Device, attribute, DeviceMeta
 
 
 class DeviceOne(Device):
+    """
+    The first of the example Device Classes. Doesn't do much, only exposes
+    one read-only float attribute.
+    """
     __metaclass__ = DeviceMeta
 
     @attribute(dtype=float)
