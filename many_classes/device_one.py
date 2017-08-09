@@ -16,5 +16,7 @@ class DeviceOne(Device):
         return random()
 
     def init_device(self):
+        print "DeviceOne.init_device: entering..."
+        self.set_change_event("some_attribute", True, False)
         self.set_state(DevState.ON)
         self.set_status("Device 1 on")
